@@ -1,0 +1,25 @@
+.blog-controls { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; gap: 20px; flex-wrap: wrap; }
+.blog-categories { display: flex; gap: 8px; flex-wrap: wrap; }
+.cat-btn { padding: 8px 20px; border-radius: var(--radius-xl); font-size: 0.85rem; font-weight: 600; background: var(--bg-light); color: var(--text-dark-secondary); transition: all 0.2s ease; }
+.cat-btn.active, .cat-btn:hover { background: var(--accent-gold); color: var(--primary-dark); }
+.blog-search { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border: 1px solid rgba(0,0,0,0.1); border-radius: var(--radius-md); background: var(--bg-white); }
+.blog-search svg { color: var(--text-dark-secondary); flex-shrink: 0; }
+.blog-search input { border: none; outline: none; font-family: var(--font-body); font-size: 0.9rem; background: transparent; min-width: 200px; }
+.no-results { text-align: center; font-size: 1.1rem; color: var(--text-dark-secondary); padding: 60px 0; }
+
+.blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 28px; }
+.article-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+.article-card-img { height: 200px; background-size: cover; background-position: center; position: relative; }
+.article-category { position: absolute; top: 16px; left: 16px; padding: 4px 14px; border-radius: var(--radius-xl); background: var(--accent-gold); color: var(--primary-dark); font-size: 0.75rem; font-weight: 700; }
+.article-card-content { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+.article-card-content h3 { font-size: 1.15rem; margin-bottom: 10px; color: var(--text-dark); transition: color 0.2s; }
+.article-card:hover h3 { color: var(--accent-gold); }
+.article-card-content p { font-size: 0.9rem; margin-bottom: 16px; flex: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.article-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--text-dark-secondary); }
+.article-read-time { display: flex; align-items: center; gap: 4px; }
+
+@media (max-width: 600px) {
+  .blog-grid { grid-template-columns: 1fr; }
+  .blog-controls { flex-direction: column; align-items: stretch; }
+  .blog-search input { min-width: unset; width: 100%; }
+}

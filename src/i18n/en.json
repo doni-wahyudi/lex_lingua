@@ -1,0 +1,55 @@
+{
+  "nav": { "home": "Home", "specialization": "Specialization", "services": "Services & Pricing", "blog": "Articles", "about": "About Us", "contact_cta": "Contact Us" },
+  "hero": { "tagline": "Precise in Meaning", "subtitle": "Professional translation services for your legal, academic, and business needs.", "cta_consult": "Free Consultation", "cta_services": "View Services" },
+  "advantages": {
+    "title": "Why Choose Us?", "subtitle": "We deliver the highest standards in every translation project",
+    "certified": { "title": "Certified Translators", "desc": "Professional translators with official certifications and years of experience." },
+    "confidential": { "title": "Guaranteed Confidentiality", "desc": "Your documents are protected with strict security standards and professional NDAs." },
+    "ontime": { "title": "On Time Delivery", "desc": "Committed to meeting agreed deadlines without compromising quality." },
+    "transparent": { "title": "Transparent Pricing", "desc": "Clear cost structure with no hidden fees. Price estimates before work begins." }
+  },
+  "specialization_preview": {
+    "title": "Our Specializations", "subtitle": "Deep expertise across professional translation fields",
+    "legal": { "title": "Legal Translator", "desc": "Legal document translation with precise terminology accuracy." },
+    "academic": { "title": "Academic Translator", "desc": "Scientific works and journal translation for international publication." },
+    "business": { "title": "Business Translator", "desc": "Professional-grade corporate document translation." },
+    "medical": { "title": "Medical Translator", "desc": "Medical document translation with precise clinical terminology." },
+    "view_all": "View All Specializations"
+  },
+  "stats": { "documents": "Documents Translated", "clients": "Corporate Clients", "specializations": "Specialization Fields", "experience": "Years of Experience" },
+  "testimonials": { "title": "What Our Clients Say", "subtitle": "Client trust and satisfaction are our top priorities" },
+  "cta_banner": { "title": "Need Professional Translation?", "subtitle": "Consult your document translation needs with our expert team. Free!", "button": "Consult via WhatsApp" },
+  "specialization_page": {
+    "title": "Translation Specializations", "subtitle": "Deep expertise and professional experience in every translation field",
+    "legal": { "title": "Legal Translator", "desc": "Precise and certified legal document translation for court proceedings, business contracts, and notarial documents.", "details": "Our legal translation team has deep understanding of cross-language legal terminology. Every translation undergoes dual review.", "documents": ["Contracts & Agreements", "Court Documents", "Notarial Deeds", "Legal Opinions", "Power of Attorney", "Laws & Regulations"] },
+    "academic": { "title": "Academic Translator", "desc": "Publication-ready scientific work translation for international journals, theses, and research papers.", "details": "We understand international academic writing standards and applicable citation conventions.", "documents": ["Scientific Journals", "Theses & Dissertations", "Research Papers", "Academic Abstracts", "Grant Proposals", "Research Reports"] },
+    "business": { "title": "Business Translator", "desc": "Professional-grade corporate document translation for business expansion and international cooperation.", "details": "Business documents require precision in conveying professional nuance and tone.", "documents": ["MoU & Cooperation Agreements", "Business Plans", "Annual Reports", "Company Profiles", "Business Proposals", "Official Correspondence"] },
+    "medical": { "title": "Medical Translator", "desc": "Medical document translation with uncompromisable clinical and pharmacological terminology precision.", "details": "Errors in medical translation can have serious impact. Our team works with the highest precision standards.", "documents": ["Medical Records", "Pharmaceutical Documents", "Clinical Research", "Patient Information", "Health Certificates", "Research Protocols"] },
+    "cta": "Consult Now"
+  },
+  "services_page": {
+    "title": "Services & Pricing", "subtitle": "Professional translation solutions with transparent pricing and guaranteed quality",
+    "tiers": {
+      "standard": { "name": "Standard", "price": "Rp 75,000", "per": "/ page", "turnaround": "3-5 business days", "features": ["Professional translation", "1 review round", "Standard document format", "Free minor revisions", "Email support"] },
+      "express": { "name": "Express", "price": "Rp 125,000", "per": "/ page", "turnaround": "1-2 business days", "badge": "Popular", "features": ["Professional translation", "2 review rounds", "Priority processing", "Original document format", "Free revisions", "WhatsApp support"] },
+      "premium": { "name": "Premium", "price": "Rp 200,000", "per": "/ page", "turnaround": "Same-day", "features": ["Certified translation", "3 reviews + proofreading", "Fastest processing", "Legalization assistance", "Custom formatting", "24/7 priority support"] }
+    },
+    "form_title": "Free Consultation", "form_subtitle": "Tell us about your translation needs",
+    "form": { "name": "Full Name", "email": "Email", "whatsapp": "WhatsApp Number", "doc_type": "Document Type", "doc_types": ["Legal Documents", "Scientific Works / Journals", "Business Documents", "Medical Documents", "Personal Documents", "Others"], "notes": "Additional Notes", "notes_placeholder": "Describe your translation needs...", "submit": "Send via WhatsApp", "select_placeholder": "Select document type" }
+  },
+  "blog_page": { "title": "Articles & Insights", "subtitle": "Tips, guides, and latest information about professional translation", "all": "All", "read_more": "Read More", "read_time": "min read", "search_placeholder": "Search articles...", "no_results": "No articles found.", "related": "Related Articles", "share": "Share", "back": "Back to Articles", "need_help": "Need translation help?", "need_help_desc": "Our expert team is ready to help with your document translation needs.", "consult_now": "Consult Now" },
+  "about_page": {
+    "title": "About Us", "subtitle": "Get to know the professional team behind Lex Lingua Academica",
+    "profile_title": "Company Profile",
+    "profile_desc": "Persekutuan Perdata LEX LINGUA ACADEMICA TRANSLATORS is a professional translation service provider based in Palembang, South Sumatra. We specialize in document translation from source language to target language, with attention to terminology equivalence, sense of language, and cultural parameters.",
+    "mission_title": "Our Mission", "mission_desc": "To provide high-quality translation services that bridge cross-language communication with precision and professionalism.",
+    "vision_title": "Our Vision", "vision_desc": "To become a trusted translation partner in Indonesia recognized nationally and internationally.",
+    "legality_title": "Legality", "legality_desc": "Registered as Persekutuan Perdata in accordance with applicable regulations. KLBI Classification 74901 — Translation Services.",
+    "team_title": "Our Team", "team_subtitle": "Experienced professionals behind every translation project",
+    "contact_title": "Contact Us", "contact_subtitle": "We are ready to help with your translation needs",
+    "address_label": "Address", "address": "Jl. Pedang No. 543-62, RT 006 RW 002, Kel. 20 Ilir D-II, Kec. Kemuning, Palembang City, South Sumatra",
+    "whatsapp_label": "WhatsApp", "email_label": "Email"
+  },
+  "footer": { "tagline": "Professional translation services for your legal, academic, and business needs.", "quick_links": "Quick Links", "services": "Services", "contact": "Contact", "copyright": "© 2026 Lex Lingua Academica Translators. All Rights Reserved." },
+  "whatsapp": { "default_message": "Hello Lex Lingua, I would like to consult about translation services." }
+}

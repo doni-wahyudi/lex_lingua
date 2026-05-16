@@ -1,0 +1,55 @@
+{
+  "nav": { "home": "Beranda", "specialization": "Spesialisasi", "services": "Layanan & Harga", "blog": "Artikel", "about": "Tentang Kami", "contact_cta": "Hubungi Kami" },
+  "hero": { "tagline": "Tepat dalam Makna", "subtitle": "Layanan penerjemahan profesional untuk kebutuhan legal, akademik, dan bisnis.", "cta_consult": "Konsultasi Gratis", "cta_services": "Lihat Layanan" },
+  "advantages": {
+    "title": "Mengapa Memilih Kami?", "subtitle": "Kami menghadirkan standar tertinggi dalam setiap proyek penerjemahan",
+    "certified": { "title": "Penerjemah Bersertifikat", "desc": "Tim penerjemah profesional dengan sertifikasi resmi dan pengalaman bertahun-tahun." },
+    "confidential": { "title": "Kerahasiaan Terjamin", "desc": "Dokumen Anda dilindungi dengan standar keamanan ketat dan NDA profesional." },
+    "ontime": { "title": "Tepat Waktu", "desc": "Komitmen penyelesaian sesuai deadline yang disepakati tanpa kompromi kualitas." },
+    "transparent": { "title": "Harga Transparan", "desc": "Struktur biaya yang jelas tanpa biaya tersembunyi. Estimasi harga sebelum pengerjaan." }
+  },
+  "specialization_preview": {
+    "title": "Spesialisasi Kami", "subtitle": "Keahlian mendalam di berbagai bidang penerjemahan profesional",
+    "legal": { "title": "Legal Translator", "desc": "Penerjemahan dokumen hukum dengan akurasi terminologi yang presisi." },
+    "academic": { "title": "Academic Translator", "desc": "Penerjemahan karya ilmiah dan jurnal untuk publikasi internasional." },
+    "business": { "title": "Business Translator", "desc": "Penerjemahan dokumen bisnis dan korporasi bertaraf profesional." },
+    "medical": { "title": "Medical Translator", "desc": "Penerjemahan dokumen medis dengan ketepatan istilah klinis." },
+    "view_all": "Lihat Semua Spesialisasi"
+  },
+  "stats": { "documents": "Dokumen Diterjemahkan", "clients": "Klien Korporasi", "specializations": "Bidang Spesialisasi", "experience": "Tahun Pengalaman" },
+  "testimonials": { "title": "Apa Kata Klien Kami", "subtitle": "Kepercayaan dan kepuasan klien adalah prioritas utama kami" },
+  "cta_banner": { "title": "Butuh Penerjemahan Profesional?", "subtitle": "Konsultasikan kebutuhan penerjemahan dokumen Anda dengan tim ahli kami. Gratis!", "button": "Konsultasi via WhatsApp" },
+  "specialization_page": {
+    "title": "Spesialisasi Translation", "subtitle": "Keahlian mendalam dan pengalaman profesional di setiap bidang penerjemahan",
+    "legal": { "title": "Legal Translator", "desc": "Penerjemahan dokumen hukum yang presisi dan bersertifikat untuk kebutuhan peradilan, kontrak bisnis, dan dokumen notaris.", "details": "Tim legal translator kami memiliki pemahaman mendalam tentang terminologi hukum lintas bahasa. Setiap terjemahan melewati proses review ganda untuk memastikan akurasi.", "documents": ["Kontrak & Perjanjian", "Dokumen Pengadilan", "Akta Notaris", "Legal Opinion", "Surat Kuasa", "Peraturan & Undang-undang"] },
+    "academic": { "title": "Academic Translator", "desc": "Penerjemahan karya ilmiah berkualitas publikasi untuk jurnal internasional, tesis, dan makalah penelitian.", "details": "Kami memahami standar penulisan akademik internasional dan konvensi sitasi yang berlaku.", "documents": ["Jurnal Ilmiah", "Tesis & Disertasi", "Makalah Penelitian", "Abstrak Akademik", "Proposal Hibah", "Laporan Penelitian"] },
+    "business": { "title": "Business Translator", "desc": "Penerjemahan dokumen korporasi bertaraf profesional untuk ekspansi bisnis dan kerjasama internasional.", "details": "Dokumen bisnis memerlukan ketepatan dalam menyampaikan nuansa dan nada profesional.", "documents": ["MoU & Perjanjian Kerja Sama", "Business Plan", "Laporan Tahunan", "Company Profile", "Proposal Bisnis", "Korespondensi Resmi"] },
+    "medical": { "title": "Medical Translator", "desc": "Penerjemahan dokumen medis dengan ketepatan istilah klinis dan farmakologi.", "details": "Kesalahan dalam penerjemahan medis dapat berdampak serius. Tim kami bekerja dengan standar presisi tertinggi.", "documents": ["Rekam Medis", "Dokumen Farmasi", "Penelitian Klinis", "Informasi Pasien", "Sertifikat Kesehatan", "Protokol Penelitian"] },
+    "cta": "Konsultasi Sekarang"
+  },
+  "services_page": {
+    "title": "Layanan & Harga", "subtitle": "Solusi penerjemahan profesional dengan harga transparan dan kualitas terjamin",
+    "tiers": {
+      "standard": { "name": "Standard", "price": "Rp 75.000", "per": "/ halaman", "turnaround": "3-5 hari kerja", "features": ["Terjemahan profesional", "Review 1 kali", "Format dokumen standar", "Revisi minor gratis", "Dukungan email"] },
+      "express": { "name": "Express", "price": "Rp 125.000", "per": "/ halaman", "turnaround": "1-2 hari kerja", "badge": "Populer", "features": ["Terjemahan profesional", "Review 2 kali", "Prioritas pengerjaan", "Format dokumen asli", "Revisi gratis", "Dukungan WhatsApp"] },
+      "premium": { "name": "Premium", "price": "Rp 200.000", "per": "/ halaman", "turnaround": "Same-day", "features": ["Terjemahan bersertifikat", "Review 3 kali + proofreading", "Pengerjaan tercepat", "Bantuan legalisasi", "Format sesuai permintaan", "Dukungan prioritas 24/7"] }
+    },
+    "form_title": "Konsultasi Gratis", "form_subtitle": "Ceritakan kebutuhan penerjemahan Anda",
+    "form": { "name": "Nama Lengkap", "email": "Email", "whatsapp": "Nomor WhatsApp", "doc_type": "Jenis Dokumen", "doc_types": ["Dokumen Hukum", "Karya Ilmiah / Jurnal", "Dokumen Bisnis", "Dokumen Medis", "Dokumen Pribadi", "Lainnya"], "notes": "Keterangan Tambahan", "notes_placeholder": "Jelaskan kebutuhan penerjemahan Anda...", "submit": "Kirim via WhatsApp", "select_placeholder": "Pilih jenis dokumen" }
+  },
+  "blog_page": { "title": "Artikel & Insight", "subtitle": "Tips, panduan, dan informasi terkini seputar dunia penerjemahan profesional", "all": "Semua", "read_more": "Baca Selengkapnya", "read_time": "menit baca", "search_placeholder": "Cari artikel...", "no_results": "Tidak ada artikel yang ditemukan.", "related": "Artikel Terkait", "share": "Bagikan", "back": "Kembali ke Artikel", "need_help": "Butuh bantuan penerjemahan?", "need_help_desc": "Tim ahli kami siap membantu kebutuhan penerjemahan dokumen Anda.", "consult_now": "Konsultasi Sekarang" },
+  "about_page": {
+    "title": "Tentang Kami", "subtitle": "Mengenal lebih dekat tim profesional di balik Lex Lingua Academica",
+    "profile_title": "Profil Perusahaan",
+    "profile_desc": "Persekutuan Perdata LEX LINGUA ACADEMICA TRANSLATORS adalah penyedia jasa penerjemahan profesional yang berdiri di Palembang, Sumatera Selatan. Kami berspesialisasi dalam penerjemahan dokumen dari bahasa asal (source language) ke dalam bahasa tujuan (target language), dengan memperhatikan parameter kesetaraan istilah, rasa bahasa, dan budaya.",
+    "mission_title": "Misi Kami", "mission_desc": "Menyediakan layanan penerjemahan berkualitas tinggi yang menjembatani komunikasi lintas bahasa dengan ketepatan makna dan profesionalisme.",
+    "vision_title": "Visi Kami", "vision_desc": "Menjadi mitra penerjemahan terpercaya di Indonesia yang diakui secara nasional dan internasional.",
+    "legality_title": "Legalitas", "legality_desc": "Terdaftar sebagai Persekutuan Perdata sesuai regulasi yang berlaku. Klasifikasi KLBI 74901 — Jasa Penerjemahan.",
+    "team_title": "Tim Kami", "team_subtitle": "Para profesional berpengalaman di balik setiap proyek terjemahan",
+    "contact_title": "Hubungi Kami", "contact_subtitle": "Kami siap membantu kebutuhan penerjemahan Anda",
+    "address_label": "Alamat", "address": "Jl. Pedang No. 543-62, RT 006 RW 002, Kel. 20 Ilir D-II, Kec. Kemuning, Kota Palembang, Prov. Sumatera Selatan",
+    "whatsapp_label": "WhatsApp", "email_label": "Email"
+  },
+  "footer": { "tagline": "Layanan penerjemahan profesional untuk kebutuhan legal, akademik, dan bisnis.", "quick_links": "Tautan Cepat", "services": "Layanan", "contact": "Kontak", "copyright": "© 2026 Lex Lingua Academica Translators. Hak Cipta Dilindungi." },
+  "whatsapp": { "default_message": "Halo Lex Lingua, saya ingin konsultasi tentang layanan penerjemahan." }
+}

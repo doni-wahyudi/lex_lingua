@@ -1,0 +1,33 @@
+.about-hero { position: relative; overflow: hidden; }
+.about-hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+.about-hero-overlay { position: absolute; inset: 0; background: rgba(8,6,22,0.8); }
+.about-hero-content { position: relative; z-index: 2; }
+
+.about-info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+.about-info-card { display: flex; flex-direction: column; gap: 12px; }
+.about-info-icon { width: 52px; height: 52px; border-radius: 14px; background: linear-gradient(135deg, var(--accent-gold), #a8894d); color: var(--primary-dark); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+.about-info-card h3 { font-size: 1.15rem; }
+
+/* Team */
+.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+.team-card { text-align: center; }
+.team-avatar { width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--accent-gold), #a8894d); color: var(--primary-dark); display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-size: 2rem; font-weight: 700; margin: 0 auto 16px; }
+.team-card h3 { font-size: 1.05rem; margin-bottom: 4px; color: var(--text-light); }
+.team-role { color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 12px; }
+.team-card p { font-size: 0.85rem; }
+
+/* Contact */
+.contact-layout { display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: start; }
+.contact-info { display: flex; flex-direction: column; gap: 28px; }
+.contact-item { display: flex; gap: 16px; align-items: flex-start; }
+.contact-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--bg-light); color: var(--accent-gold); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+.contact-item h4 { font-size: 0.95rem; margin-bottom: 4px; color: var(--text-dark); }
+.contact-item p, .contact-item a { font-size: 0.9rem; color: var(--text-dark-secondary); }
+.contact-item a:hover { color: var(--accent-gold); }
+.contact-wa-btn { margin-top: 8px; align-self: flex-start; }
+.contact-map { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); }
+
+@media (max-width: 900px) {
+  .about-info-grid { grid-template-columns: 1fr; }
+  .contact-layout { grid-template-columns: 1fr; }
+}
