@@ -70,6 +70,12 @@ const articleFiles = import.meta.glob('/src/data/articles/*.md', { query: '?raw'
 export function getAllArticles() {
   const articles = Object.entries(articleFiles).map(([path, content]) => {
     const { data, content: body } = parseFrontmatter(content);
+    
+    // Fix image paths for subpath deployment
+    if (data.coverImage && data.coverImage.startsWith('/')) {
+      data.coverImage = import.meta.env.BASE_URL + data.coverImage.slice(1);
+    }
+
     const filename = path.split('/').pop().replace('.md', '');
     return {
       slug: data.slug || filename,

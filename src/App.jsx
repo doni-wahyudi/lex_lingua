@@ -16,7 +16,7 @@ function App() {
   return (
     <LanguageProvider>
       <ModalProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/lex_lingua">
           <ScrollToTop />
           <Navbar />
           <Routes>

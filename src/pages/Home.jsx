@@ -47,10 +47,10 @@ export default function Home() {
   ];
 
   const specializations = [
-    { icon: <FaGavel />, key: 'legal', image: '/images/legal-translation.png' },
-    { icon: <FaGraduationCap />, key: 'academic', image: '/images/academic-translation.png' },
-    { icon: <FaBriefcase />, key: 'business', image: '/images/business-translation.png' },
-    { icon: <FaStethoscope />, key: 'medical', image: '/images/medical-translation.png' },
+    { icon: <FaGavel />, key: 'legal', image: `${import.meta.env.BASE_URL}images/legal-translation.png` },
+    { icon: <FaGraduationCap />, key: 'academic', image: `${import.meta.env.BASE_URL}images/academic-translation.png` },
+    { icon: <FaBriefcase />, key: 'business', image: `${import.meta.env.BASE_URL}images/business-translation.png` },
+    { icon: <FaStethoscope />, key: 'medical', image: `${import.meta.env.BASE_URL}images/medical-translation.png` },
   ];
 
   const nextTestimonial = () => setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
@@ -65,7 +65,7 @@ export default function Home() {
     <main id="home-page">
       {/* Hero */}
       <section className="hero section-dark" id="hero">
-        <div className="hero-bg" style={{ backgroundImage: 'url(/images/hero-bg.png)' }} />
+        <div className="hero-bg" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/hero-bg.png)` }} />
         <div className="hero-overlay" />
         <div className="container hero-content">
           <p className="hero-brand fade-in-up">LEX LINGUA ACADEMICA</p>

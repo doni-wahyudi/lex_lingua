@@ -11,7 +11,7 @@ export default function About() {
   return (
     <main id="about-page">
       <section className="page-hero section-dark about-hero">
-        <div className="about-hero-bg" style={{ backgroundImage: 'url(/images/about-hero.png)' }} />
+        <div className="about-hero-bg" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/about-hero.png)` }} />
         <div className="about-hero-overlay" />
         <div className="container about-hero-content">
           <h1>{t('about_page.title')}</h1>

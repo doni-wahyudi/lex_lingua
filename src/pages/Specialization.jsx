@@ -8,10 +8,10 @@ export default function Specialization() {
   const { openContactModal } = useModal();
 
   const specs = [
-    { key: 'legal', icon: <FaGavel size={32} />, image: '/images/legal-translation.png' },
-    { key: 'academic', icon: <FaGraduationCap size={32} />, image: '/images/academic-translation.png' },
-    { key: 'business', icon: <FaBriefcase size={32} />, image: '/images/business-translation.png' },
-    { key: 'medical', icon: <FaStethoscope size={32} />, image: '/images/medical-translation.png' },
+    { key: 'legal', icon: <FaGavel size={32} />, image: `${import.meta.env.BASE_URL}images/legal-translation.png` },
+    { key: 'academic', icon: <FaGraduationCap size={32} />, image: `${import.meta.env.BASE_URL}images/academic-translation.png` },
+    { key: 'business', icon: <FaBriefcase size={32} />, image: `${import.meta.env.BASE_URL}images/business-translation.png` },
+    { key: 'medical', icon: <FaStethoscope size={32} />, image: `${import.meta.env.BASE_URL}images/medical-translation.png` },
   ];
 
   return (
