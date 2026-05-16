@@ -93,7 +93,6 @@ export default function ContactModal({ isOpen, onClose, initialDocType = '' }) {
               {Array.isArray(t('services_page.form.doc_types')) && t('services_page.form.doc_types').map((type, i) => (
                 <option key={i} value={type}>{type}</option>
               ))}
-              <option value="Other">Other</option>
             </select>
           </div>
 

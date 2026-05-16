@@ -1,8 +1,11 @@
 import { useLanguage } from '../i18n/LanguageContext';
 import { useModal } from '../context/ModalContext';
 import { team } from '../data/team';
-import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaBuilding, FaBullseye, FaEye, FaFileAlt } from 'react-icons/fa';
+import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaBuilding, FaBullseye, FaEye, FaFileAlt, FaImages } from 'react-icons/fa';
 import './About.css';
+
+// Load gallery images
+const galleryImages = Object.values(import.meta.glob('../assets/gallery/*.jpeg', { eager: true, import: 'default' }));
 
 export default function About() {
   const { t, language } = useLanguage();
@@ -63,6 +66,23 @@ export default function About() {
                 <h3>{member.name}</h3>
                 <span className="team-role">{member.role[language]}</span>
                 <p>{member.bio[language]}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section className="section section-light" id="gallery">
+        <div className="container">
+          <div className="section-header">
+            <h2>{t('about_page.gallery_title')}</h2>
+            <p>{t('about_page.gallery_subtitle')}</p>
+          </div>
+          <div className="gallery-grid">
+            {galleryImages.map((img, i) => (
+              <div key={i} className="gallery-item fade-in-up" style={{ animationDelay: `${i * 0.1}s` }}>
+                <img src={img} alt={`Gallery ${i + 1}`} loading="lazy" />
               </div>
             ))}
           </div>
