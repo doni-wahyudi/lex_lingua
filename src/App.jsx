@@ -16,7 +16,7 @@ function App() {
   return (
     <LanguageProvider>
       <ModalProvider>
-        <BrowserRouter basename="/lex_lingua">
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <ScrollToTop />
           <Navbar />
           <Routes>
