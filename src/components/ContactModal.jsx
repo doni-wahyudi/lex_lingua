@@ -50,7 +50,7 @@ export default function ContactModal({ isOpen, onClose, initialDocType = '' }) {
 
         <form className="modal-form" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label><FaUser /> {t('services_page.form.name')}</label>
+            <label><span><FaUser /></span> {t('services_page.form.name')}</label>
             <input 
               type="text" 
               name="name" 
@@ -63,7 +63,7 @@ export default function ContactModal({ isOpen, onClose, initialDocType = '' }) {
 
           <div className="form-grid">
             <div className="form-group">
-              <label><FaEnvelope /> {t('services_page.form.email')}</label>
+              <label><span><FaEnvelope /></span> {t('services_page.form.email')}</label>
               <input 
                 type="email" 
                 name="email" 
@@ -74,7 +74,7 @@ export default function ContactModal({ isOpen, onClose, initialDocType = '' }) {
               />
             </div>
             <div className="form-group">
-              <label><FaWhatsapp /> {t('services_page.form.whatsapp')}</label>
+              <label><span><FaWhatsapp /></span> {t('services_page.form.whatsapp')}</label>
               <input 
                 type="tel" 
                 name="whatsapp" 
@@ -87,7 +87,7 @@ export default function ContactModal({ isOpen, onClose, initialDocType = '' }) {
           </div>
 
           <div className="form-group">
-            <label><FaFileAlt /> {t('services_page.form.doc_type')}</label>
+            <label><span><FaFileAlt /></span> {t('services_page.form.doc_type')}</label>
             <select name="docType" value={form.docType} onChange={handleChange} required>
               <option value="">{t('services_page.form.select_placeholder')}</option>
               {Array.isArray(t('services_page.form.doc_types')) && t('services_page.form.doc_types').map((type, i) => (
@@ -98,7 +98,7 @@ export default function ContactModal({ isOpen, onClose, initialDocType = '' }) {
           </div>
 
           <div className="form-group">
-            <label><FaCommentAlt /> {t('services_page.form.notes')}</label>
+            <label><span><FaCommentAlt /></span> {t('services_page.form.notes')}</label>
             <textarea 
               name="notes" 
               value={form.notes} 

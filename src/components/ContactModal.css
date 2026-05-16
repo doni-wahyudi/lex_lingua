@@ -80,7 +80,16 @@
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  margin-bottom: 2px;
+}
+
+.modal-form label span {
+  font-size: 1rem;
+  min-width: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-form input, 
@@ -125,8 +134,15 @@
 @media (max-width: 600px) {
   .modal-container {
     padding: 30px 20px;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
   }
   .modal-form .form-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .modal-header h2 {
+    font-size: 1.5rem;
   }
 }
