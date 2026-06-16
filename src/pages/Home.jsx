@@ -1,65 +1,27 @@
-import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 import { useModal } from '../context/ModalContext';
-import { FaWhatsapp, FaShieldAlt, FaLock, FaClock, FaMoneyBillWave, FaGavel, FaGraduationCap, FaBriefcase, FaStethoscope, FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import { testimonials } from '../data/testimonials';
+import { FaWhatsapp, FaLock, FaClock, FaGavel, FaGraduationCap, FaBriefcase, FaGlobe, FaUsers, FaBook } from 'react-icons/fa';
 import './Home.css';
 
-function CountUp({ end, suffix = '', duration = 2000 }) {
-  const [count, setCount] = useState(0);
-  const ref = useRef(null);
-  const counted = useRef(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting && !counted.current) {
-        counted.current = true;
-        const start = 0;
-        const startTime = performance.now();
-        const animate = (now) => {
-          const elapsed = now - startTime;
-          const progress = Math.min(elapsed / duration, 1);
-          const eased = 1 - Math.pow(1 - progress, 3);
-          setCount(Math.floor(eased * (end - start) + start));
-          if (progress < 1) requestAnimationFrame(animate);
-        };
-        requestAnimationFrame(animate);
-      }
-    }, { threshold: 0.5 });
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, [end, duration]);
-
-  return <span ref={ref}>{count}{suffix}</span>;
-}
-
 export default function Home() {
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
   const { openContactModal } = useModal();
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const advantages = [
-    { icon: <FaShieldAlt />, key: 'certified' },
+    { icon: <FaGraduationCap />, key: 'terminology' },
+    { icon: <FaGlobe />, key: 'cultural' },
     { icon: <FaLock />, key: 'confidential' },
-    { icon: <FaClock />, key: 'ontime' },
-    { icon: <FaMoneyBillWave />, key: 'transparent' },
+    { icon: <FaClock />, key: 'process' },
+    { icon: <FaUsers />, key: 'team' },
   ];
 
   const specializations = [
-    { icon: <FaGavel />, key: 'legal', image: `${import.meta.env.BASE_URL}images/legal-translation.png` },
     { icon: <FaGraduationCap />, key: 'academic', image: `${import.meta.env.BASE_URL}images/academic-translation.png` },
+    { icon: <FaGavel />, key: 'legal', image: `${import.meta.env.BASE_URL}images/legal-translation.png` },
+    { icon: <FaBook />, key: 'education', image: `${import.meta.env.BASE_URL}images/education-translation.png` },
     { icon: <FaBriefcase />, key: 'business', image: `${import.meta.env.BASE_URL}images/business-translation.png` },
-    { icon: <FaStethoscope />, key: 'medical', image: `${import.meta.env.BASE_URL}images/medical-translation.png` },
   ];
-
-  const nextTestimonial = () => setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-  const prevTestimonial = () => setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-
-  useEffect(() => {
-    const timer = setInterval(nextTestimonial, 5000);
-    return () => clearInterval(timer);
-  }, []);
 
   return (
     <main id="home-page">
@@ -82,6 +44,16 @@ export default function Home() {
         </div>
         <div className="hero-scroll-indicator">
           <div className="scroll-line" />
+        </div>
+      </section>
+
+      {/* Short Description */}
+      <section className="section section-light description-section" id="description">
+        <div className="container">
+          <div className="description-content fade-in-up">
+            <h2>{t('description.title')}</h2>
+            <p>{t('description.text')}</p>
+          </div>
         </div>
       </section>
 
@@ -125,64 +97,6 @@ export default function Home() {
           </div>
           <div className="section-cta">
             <Link to="/specialization" className="btn btn-outline">{t('specialization_preview.view_all')}</Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="section section-navy" id="stats">
-        <div className="container">
-          <div className="stats-grid">
-            <div className="stat-item">
-              <div className="stat-number"><CountUp end={500} suffix="+" /></div>
-              <p>{t('stats.documents')}</p>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number"><CountUp end={50} suffix="+" /></div>
-              <p>{t('stats.clients')}</p>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number"><CountUp end={4} /></div>
-              <p>{t('stats.specializations')}</p>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number"><CountUp end={10} suffix="+" /></div>
-              <p>{t('stats.experience')}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="section" id="testimonials">
-        <div className="container">
-          <div className="section-header">
-            <h2>{t('testimonials.title')}</h2>
-            <p>{t('testimonials.subtitle')}</p>
-          </div>
-          <div className="testimonial-carousel">
-            <button className="carousel-btn prev" onClick={prevTestimonial}><FaChevronLeft /></button>
-            <div className="testimonial-card light-card">
-              <div className="testimonial-stars">
-                {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                  <FaStar key={i} />
-                ))}
-              </div>
-              <p className="testimonial-content">"{testimonials[currentTestimonial].content[language]}"</p>
-              <div className="testimonial-author">
-                <div className="testimonial-avatar">{testimonials[currentTestimonial].name.charAt(0)}</div>
-                <div>
-                  <strong>{testimonials[currentTestimonial].name}</strong>
-                  <span>{testimonials[currentTestimonial].role[language]}</span>
-                </div>
-              </div>
-            </div>
-            <button className="carousel-btn next" onClick={nextTestimonial}><FaChevronRight /></button>
-          </div>
-          <div className="carousel-dots">
-            {testimonials.map((_, i) => (
-              <button key={i} className={`dot ${i === currentTestimonial ? 'active' : ''}`} onClick={() => setCurrentTestimonial(i)} />
-            ))}
           </div>
         </div>
       </section>

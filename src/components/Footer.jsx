@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
-import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import './Footer.css';
 
 export default function Footer() {
@@ -26,10 +26,10 @@ export default function Footer() {
           </div>
           <div className="footer-col">
             <h4>{t('footer.services')}</h4>
-            <span>Legal Translator</span>
-            <span>Academic Translator</span>
-            <span>Business Translator</span>
-            <span>Medical Translator</span>
+            <span>{t('specialization_preview.academic.title')}</span>
+            <span>{t('specialization_preview.legal.title')}</span>
+            <span>{t('specialization_preview.education.title')}</span>
+            <span>{t('specialization_preview.business.title')}</span>
           </div>
           <div className="footer-col">
             <h4>{t('footer.contact')}</h4>
@@ -41,6 +41,9 @@ export default function Footer() {
             </a>
             <span className="footer-address">
               <FaMapMarkerAlt /> Palembang, Sumatera Selatan
+            </span>
+            <span className="footer-hours">
+              <FaClock /> {t('footer.hours')}
             </span>
           </div>
         </div>

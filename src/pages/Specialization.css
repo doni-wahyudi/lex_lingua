@@ -17,8 +17,19 @@
 .doc-chip { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background: var(--bg-light); border-radius: var(--radius-xl); font-size: 0.85rem; color: var(--text-dark-secondary); border: 1px solid rgba(0,0,0,0.06); }
 .doc-chip svg { color: var(--accent-gold); font-size: 0.8rem; }
 
+/* Languages Served */
+.languages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+.language-card { display: flex; align-items: center; gap: 16px; padding: 24px; border-radius: var(--radius-md); transition: all var(--transition-base); }
+.language-icon { font-size: 2.2rem; color: var(--accent-gold); flex-shrink: 0; }
+.language-card span { font-size: 1rem; font-weight: 500; color: var(--text-light); }
+
 @media (max-width: 900px) {
   .spec-detail { grid-template-columns: 1fr; gap: 32px; }
   .spec-detail.reverse { direction: ltr; }
   .spec-detail-image img { height: 250px; }
+  .languages-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .languages-grid { grid-template-columns: 1fr; }
 }

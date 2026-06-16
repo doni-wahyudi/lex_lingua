@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { useModal } from '../context/ModalContext';
-import { FaWhatsapp, FaCheck, FaCrown, FaUser, FaEnvelope, FaFileAlt, FaCommentAlt } from 'react-icons/fa';
+import { FaWhatsapp, FaUser, FaEnvelope, FaFileAlt, FaCommentAlt, FaCheckCircle } from 'react-icons/fa';
 import './Services.css';
 
 export default function Services() {
@@ -9,13 +9,13 @@ export default function Services() {
   const { openContactModal } = useModal();
   const [form, setForm] = useState({ name: '', email: '', whatsapp: '', docType: '', notes: '' });
 
-  const tiers = ['standard', 'express', 'premium'];
+  const serviceKeys = ['academic_standard', 'academic_premium', 'legal', 'proofreading', 'express'];
 
   const handleChange = (e) => setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const docTypes = t('services_page.form.doc_types');
+    const docTypes = t('services_page.form.doc_types', { returnObjects: true });
     const selectedType = Array.isArray(docTypes) ? docTypes[form.docType] || form.docType : form.docType;
     const message = `Halo Lex Lingua,\n\nSaya ingin konsultasi:\n\nNama: ${form.name}\nEmail: ${form.email}\nWhatsApp: ${form.whatsapp}\nJenis Dokumen: ${selectedType}\nKeterangan: ${form.notes}`;
     window.open(`https://wa.me/6281291406888?text=${encodeURIComponent(message)}`, '_blank');
@@ -30,35 +30,43 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Pricing Tiers */}
+      {/* Services List Grid */}
       <section className="section">
         <div className="container">
-          <div className="pricing-grid">
-            {tiers.map((tier) => {
-              const data = t(`services_page.tiers.${tier}`);
-              const isPopular = tier === 'express';
-              const features = typeof data === 'object' ? data.features : [];
+          <div className="services-list-grid">
+            {serviceKeys.map((key) => {
+              const service = t(`services_page.services.${key}`, { returnObjects: true });
+              const isExpress = key === 'express';
               return (
-                <div key={tier} className={`pricing-card light-card ${isPopular ? 'popular' : ''}`}>
-                  {isPopular && data.badge && <div className="popular-badge"><FaCrown /> {data.badge}</div>}
-                  <h3 className="tier-name">{data.name || tier}</h3>
-                  <div className="tier-price">
-                    <span className="price">{data.price}</span>
-                    <span className="per">{data.per}</span>
+                <div key={key} className={`service-card light-card ${isExpress ? 'express-card' : ''}`}>
+                  <div className="service-card-header">
+                    <h3>{service.name}</h3>
+                    <div className="service-price">
+                      <span className="price-val">{service.price}</span>
+                      <span className="price-per">{service.per}</span>
+                    </div>
                   </div>
-                  <p className="tier-turnaround">{data.turnaround}</p>
-                  <ul className="tier-features">
-                    {Array.isArray(features) && features.map((f, i) => (
-                      <li key={i}><FaCheck /> {f}</li>
-                    ))}
-                  </ul>
-                  <button onClick={() => openContactModal(`Layanan ${data.name || tier}`)}
-                    className={`btn ${isPopular ? 'btn-primary' : 'btn-outline'} tier-btn`}>
+                  <p className="service-desc">{service.desc}</p>
+                  <button onClick={() => openContactModal(service.name)} className={`btn ${isExpress ? 'btn-primary' : 'btn-outline'} service-btn`}>
                     <FaWhatsapp /> {t('specialization_page.cta')}
                   </button>
                 </div>
               );
             })}
+          </div>
+
+          {/* Notes */}
+          <div className="services-notes glass-card">
+            <h4>{t('services_page.notes_title')}</h4>
+            <ul>
+              {Array.isArray(t('services_page.notes', { returnObjects: true })) && 
+               t('services_page.notes', { returnObjects: true }).map((note, idx) => (
+                <li key={idx}>
+                  <FaCheckCircle className="note-check-icon" />
+                  <span>{note}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
@@ -88,7 +96,8 @@ export default function Services() {
                 <label><span><FaFileAlt /></span> {t('services_page.form.doc_type')}</label>
                 <select name="docType" value={form.docType} onChange={handleChange} required>
                   <option value="">{t('services_page.form.select_placeholder')}</option>
-                  {Array.isArray(t('services_page.form.doc_types')) && t('services_page.form.doc_types').map((type, i) => (
+                  {Array.isArray(t('services_page.form.doc_types', { returnObjects: true })) && 
+                   t('services_page.form.doc_types', { returnObjects: true }).map((type, i) => (
                     <option key={i} value={type}>{type}</option>
                   ))}
                 </select>

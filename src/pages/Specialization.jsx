@@ -1,6 +1,6 @@
 import { useLanguage } from '../i18n/LanguageContext';
 import { useModal } from '../context/ModalContext';
-import { FaGavel, FaGraduationCap, FaBriefcase, FaStethoscope, FaWhatsapp, FaCheckCircle } from 'react-icons/fa';
+import { FaGavel, FaGraduationCap, FaBriefcase, FaBook, FaWhatsapp, FaCheckCircle, FaLanguage } from 'react-icons/fa';
 import './Specialization.css';
 
 export default function Specialization() {
@@ -8,10 +8,10 @@ export default function Specialization() {
   const { openContactModal } = useModal();
 
   const specs = [
-    { key: 'legal', icon: <FaGavel size={32} />, image: `${import.meta.env.BASE_URL}images/legal-translation.png` },
     { key: 'academic', icon: <FaGraduationCap size={32} />, image: `${import.meta.env.BASE_URL}images/academic-translation.png` },
+    { key: 'legal', icon: <FaGavel size={32} />, image: `${import.meta.env.BASE_URL}images/legal-translation.png` },
+    { key: 'education', icon: <FaBook size={32} />, image: `${import.meta.env.BASE_URL}images/education-translation.png` },
     { key: 'business', icon: <FaBriefcase size={32} />, image: `${import.meta.env.BASE_URL}images/business-translation.png` },
-    { key: 'medical', icon: <FaStethoscope size={32} />, image: `${import.meta.env.BASE_URL}images/medical-translation.png` },
   ];
 
   return (
@@ -50,6 +50,25 @@ export default function Specialization() {
               </div>
             );
           })}
+        </div>
+      </section>
+
+      {/* Languages Served */}
+      <section className="section section-navy" id="languages-served">
+        <div className="container">
+          <div className="section-header">
+            <h2>{t('specialization_page.languages.title')}</h2>
+            <p>{t('specialization_page.languages.subtitle')}</p>
+          </div>
+          <div className="languages-grid">
+            {Array.isArray(t('specialization_page.languages.pairs', { returnObjects: true })) && 
+             t('specialization_page.languages.pairs', { returnObjects: true }).map((pair, idx) => (
+              <div key={idx} className="language-card glass-card">
+                <FaLanguage className="language-icon" />
+                <span>{pair}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </main>

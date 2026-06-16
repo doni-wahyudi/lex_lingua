@@ -1,56 +1,204 @@
 {
-  "nav": { "home": "Home", "specialization": "Specialization", "services": "Services & Pricing", "blog": "Articles", "about": "About Us", "contact_cta": "Contact Us" },
-  "hero": { "tagline": "Precise in Meaning", "subtitle": "Professional translation services for your legal, academic, and business needs.", "cta_consult": "Free Consultation", "cta_services": "View Services" },
+  "nav": { "home": "Home", "specialization": "Specialization", "services": "Services & Pricing", "blog": "Articles", "about": "Our Team", "contact_cta": "Contact Us" },
+  "hero": {
+    "tagline": "Precision Academic Translation for Global Communication",
+    "subtitle": "Lex Lingua Academica provides academic and professional translation services emphasizing terminology equivalence, meaning accuracy, language nuance, and cultural sensitivity to support education, research, and international publication needs.",
+    "cta_consult": "Consult Now",
+    "cta_services": "View Services"
+  },
+  "description": {
+    "title": "About Us",
+    "text": "Based on the Indonesian Standard Classification of Business Fields (KBLI) 74901, Lex Lingua Academica operates in translation services from source language to target language, with attention to terminology equivalence, language sense, academic context, and cultural aspects. We are committed to delivering accurate, natural translations that meet international standards to support individuals, educational institutions, researchers, organizations, and professionals."
+  },
   "advantages": {
-    "title": "Why Choose Us?", "subtitle": "We deliver the highest standards in every translation project",
-    "certified": { "title": "Certified Translators", "desc": "Professional translators with official certifications and years of experience." },
-    "confidential": { "title": "Guaranteed Confidentiality", "desc": "Your documents are protected with strict security standards and professional NDAs." },
-    "ontime": { "title": "On Time Delivery", "desc": "Committed to meeting agreed deadlines without compromising quality." },
-    "transparent": { "title": "Transparent Pricing", "desc": "Clear cost structure with no hidden fees. Price estimates before work begins." }
+    "title": "Our Advantages",
+    "subtitle": "Our commitment in every translation project",
+    "terminology": { "title": "Academic & Professional Terminology", "desc": "Translation based on precise academic and professional terminology that meets standards." },
+    "cultural": { "title": "Cultural Context & Language Nuance", "desc": "Attention to cultural context and language nuance for natural translation results." },
+    "confidential": { "title": "Document Confidentiality", "desc": "Guaranteeing client document confidentiality with professional security standards." },
+    "process": { "title": "Fast, Accurate & Transparent", "desc": "Fast, accurate, and transparent work process with no hidden costs." },
+    "team": { "title": "Experienced Team", "desc": "Supported by experienced translators and editors across various fields of expertise." }
   },
   "specialization_preview": {
-    "title": "Our Specializations", "subtitle": "Deep expertise across professional translation fields",
-    "legal": { "title": "Legal Translator", "desc": "Legal document translation with precise terminology accuracy." },
-    "academic": { "title": "Academic Translator", "desc": "Scientific works and journal translation for international publication." },
-    "business": { "title": "Business Translator", "desc": "Professional-grade corporate document translation." },
-    "medical": { "title": "Medical Translator", "desc": "Medical document translation with precise clinical terminology." },
+    "title": "Our Specializations",
+    "subtitle": "Deep expertise across professional translation fields",
+    "academic": { "title": "Academic Translation", "desc": "Scientific articles, journal manuscripts, theses, dissertations, and research proposals." },
+    "legal": { "title": "Legal Translation", "desc": "Contracts, agreements, litigation documents, legal opinions, and regulations." },
+    "education": { "title": "Education & Research Translation", "desc": "Learning modules, research instruments, research reports, and training materials." },
+    "business": { "title": "Business & Organization Translation", "desc": "Company profiles, annual reports, business presentations, and institutional documents." },
     "view_all": "View All Specializations"
   },
-  "stats": { "documents": "Documents Translated", "clients": "Corporate Clients", "specializations": "Specialization Fields", "experience": "Years of Experience" },
-  "testimonials": { "title": "What Our Clients Say", "subtitle": "Client trust and satisfaction are our top priorities" },
   "cta_banner": { "title": "Need Professional Translation?", "subtitle": "Consult your document translation needs with our expert team. Free!", "button": "Consult via WhatsApp" },
   "specialization_page": {
-    "title": "Translation Specializations", "subtitle": "Deep expertise and professional experience in every translation field",
-    "legal": { "title": "Legal Translator", "desc": "Precise and certified legal document translation for court proceedings, business contracts, and notarial documents.", "details": "Our legal translation team has deep understanding of cross-language legal terminology. Every translation undergoes dual review.", "documents": ["Contracts & Agreements", "Court Documents", "Notarial Deeds", "Legal Opinions", "Power of Attorney", "Laws & Regulations"] },
-    "academic": { "title": "Academic Translator", "desc": "Publication-ready scientific work translation for international journals, theses, and research papers.", "details": "We understand international academic writing standards and applicable citation conventions.", "documents": ["Scientific Journals", "Theses & Dissertations", "Research Papers", "Academic Abstracts", "Grant Proposals", "Research Reports"] },
-    "business": { "title": "Business Translator", "desc": "Professional-grade corporate document translation for business expansion and international cooperation.", "details": "Business documents require precision in conveying professional nuance and tone.", "documents": ["MoU & Cooperation Agreements", "Business Plans", "Annual Reports", "Company Profiles", "Business Proposals", "Official Correspondence"] },
-    "medical": { "title": "Medical Translator", "desc": "Medical document translation with uncompromisable clinical and pharmacological terminology precision.", "details": "Errors in medical translation can have serious impact. Our team works with the highest precision standards.", "documents": ["Medical Records", "Pharmaceutical Documents", "Clinical Research", "Patient Information", "Health Certificates", "Research Protocols"] },
+    "title": "Our Specializations",
+    "subtitle": "Deep expertise and professional experience in every translation field",
+    "academic": {
+      "title": "Academic Translation",
+      "desc": "Publication-ready scientific work translation for international journals, theses, and research papers.",
+      "details": "We understand international academic writing standards and applicable citation conventions across various disciplines.",
+      "documents": ["Scientific Articles", "Journal Manuscripts", "Theses and Dissertations", "Conference Proceedings", "Research Proposals"]
+    },
+    "legal": {
+      "title": "Legal Translation",
+      "desc": "Precise legal document translation with attention to legal terminology accuracy and regulatory context.",
+      "details": "Our legal translation team has deep understanding of cross-language legal terminology and legal systems.",
+      "documents": ["Contracts and Agreements", "Litigation Documents", "Legal Opinions", "Regulations and Policies"]
+    },
+    "education": {
+      "title": "Education and Research Translation",
+      "desc": "Translation of education and research documents to support academic activities and knowledge development.",
+      "details": "We ensure every education and research document is translated with attention to pedagogical and methodological context.",
+      "documents": ["Learning Modules", "Research Instruments", "Research Reports", "Training Materials"]
+    },
+    "business": {
+      "title": "Business and Organization Translation",
+      "desc": "Professional-grade corporate document translation for business expansion and international cooperation.",
+      "details": "Business documents require precision in conveying appropriate professional nuance and tone.",
+      "documents": ["Company Profiles", "Annual Reports", "Business Presentations", "Institutional Documents"]
+    },
+    "languages": {
+      "title": "Languages Served",
+      "subtitle": "Service expansion for other languages is available upon request.",
+      "pairs": [
+        "Indonesian – English",
+        "English – Indonesian",
+        "Indonesian – Dutch",
+        "Dutch – Indonesian",
+        "Indonesian – Korean",
+        "Korean – Indonesian"
+      ]
+    },
     "cta": "Consult Now"
   },
   "services_page": {
-    "title": "Services & Pricing", "subtitle": "Professional translation solutions with transparent pricing and guaranteed quality",
-    "tiers": {
-      "standard": { "name": "Standard", "price": "Rp 75,000", "per": "/ page", "turnaround": "3-5 business days", "features": ["Professional translation", "1 review round", "Standard document format", "Free minor revisions", "Email support"] },
-      "express": { "name": "Express", "price": "Rp 125,000", "per": "/ page", "turnaround": "1-2 business days", "badge": "Popular", "features": ["Professional translation", "2 review rounds", "Priority processing", "Original document format", "Free revisions", "WhatsApp support"] },
-      "premium": { "name": "Premium", "price": "Rp 200,000", "per": "/ page", "turnaround": "Same-day", "features": ["Certified translation", "3 reviews + proofreading", "Fastest processing", "Legalization assistance", "Custom formatting", "24/7 priority support"] }
+    "title": "Services & Pricing",
+    "subtitle": "Professional translation solutions with transparent pricing and guaranteed quality",
+    "services": {
+      "academic_standard": {
+        "name": "Standard Academic Translation",
+        "price": "Rp150,000",
+        "per": "/ page (250–300 words)",
+        "desc": "Suitable for scientific articles, theses, research proposals, and academic documents."
+      },
+      "academic_premium": {
+        "name": "Premium Academic Translation",
+        "price": "Rp250,000",
+        "per": "/ page (250–300 words)",
+        "desc": "Includes academic terminology editing and final quality review."
+      },
+      "legal": {
+        "name": "Legal Document Translation",
+        "price": "Rp300,000",
+        "per": "/ page (250–300 words)",
+        "desc": "Prepared with attention to legal terminology precision and regulatory context."
+      },
+      "proofreading": {
+        "name": "Academic Editing and Proofreading",
+        "price": "Rp75,000",
+        "per": "/ page",
+        "desc": "Includes grammar review, terminology consistency, and academic style refinement."
+      },
+      "express": {
+        "name": "Express Service",
+        "price": "+30%",
+        "per": "of total service cost",
+        "desc": "Additional cost for work with tighter deadlines."
+      }
     },
-    "form_title": "Free Consultation", "form_subtitle": "Tell us about your translation needs",
-    "form": { "name": "Full Name", "email": "Email", "whatsapp": "WhatsApp Number", "doc_type": "Document Type", "doc_types": ["Legal Documents", "Scientific Works / Journals", "Business Documents", "Medical Documents", "Personal Documents", "Others"], "notes": "Additional Notes", "notes_placeholder": "Describe your translation needs...", "submit": "Send via WhatsApp", "select_placeholder": "Select document type" }
+    "notes_title": "Notes",
+    "notes": [
+      "Pricing may be adjusted based on document complexity, field of expertise, word count, and deadline.",
+      "All client documents are guaranteed confidential.",
+      "Final pricing will be provided after documents are reviewed by our team."
+    ],
+    "form_title": "Free Consultation",
+    "form_subtitle": "Tell us about your translation needs",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "whatsapp": "WhatsApp Number",
+      "doc_type": "Document Type",
+      "doc_types": ["Academic Documents", "Legal Documents", "Education & Research Documents", "Business & Organization Documents", "Editing / Proofreading", "Others"],
+      "notes": "Additional Notes",
+      "notes_placeholder": "Describe your translation needs...",
+      "submit": "Send via WhatsApp",
+      "select_placeholder": "Select document type"
+    }
   },
-  "blog_page": { "title": "Articles & Insights", "subtitle": "Tips, guides, and latest information about professional translation", "all": "All", "read_more": "Read More", "read_time": "min read", "search_placeholder": "Search articles...", "no_results": "No articles found.", "related": "Related Articles", "share": "Share", "back": "Back to Articles", "need_help": "Need translation help?", "need_help_desc": "Our expert team is ready to help with your document translation needs.", "consult_now": "Consult Now" },
+  "blog_page": {
+    "title": "Articles & Insights",
+    "subtitle": "Articles, insights, and latest information about translation, academia, and scientific publication",
+    "all": "All",
+    "read_more": "Read More",
+    "read_time": "min read",
+    "search_placeholder": "Search articles...",
+    "no_results": "No articles found.",
+    "related": "Related Articles",
+    "share": "Share",
+    "back": "Back to Articles",
+    "need_help": "Need translation help?",
+    "need_help_desc": "Our expert team is ready to help with your document translation needs.",
+    "consult_now": "Consult Now"
+  },
   "about_page": {
-    "title": "About Us", "subtitle": "Get to know the professional team behind Lex Lingua Academica",
-    "profile_title": "Company Profile",
-    "profile_desc": "Persekutuan Perdata LEX LINGUA ACADEMICA TRANSLATORS is a professional translation service provider based in Palembang, South Sumatra. We specialize in document translation from source language to target language, with attention to terminology equivalence, sense of language, and cultural parameters.",
-    "mission_title": "Our Mission", "mission_desc": "To provide high-quality translation services that bridge cross-language communication with precision and professionalism.",
-    "vision_title": "Our Vision", "vision_desc": "To become a trusted translation partner in Indonesia recognized nationally and internationally.",
-    "legality_title": "Legality", "legality_desc": "Registered as Persekutuan Perdata in accordance with applicable regulations. KLBI Classification 74901 — Translation Services.",
-    "team_title": "Our Team", "team_subtitle": "Experienced professionals behind every translation project",
-    "gallery_title": "Our Gallery", "gallery_subtitle": "Moments and activities of Lex Lingua Academica in serving clients",
-    "contact_title": "Contact Us", "contact_subtitle": "We are ready to help with your translation needs",
-    "address_label": "Address", "address": "Jl. Pedang No. 543-62, RT 006 RW 002, Kel. 20 Ilir D-II, Kec. Kemuning, Palembang City, South Sumatra",
-    "whatsapp_label": "WhatsApp", "email_label": "Email"
+    "title": "Lex Lingua Team",
+    "subtitle": "Lex Lingua Academica is supported by a team of translators, editors, and language consultants with experience in academia, law, and research.",
+    "team_title": "Team Members",
+    "team_subtitle": "Each team member has the competence to ensure accurate, consistent, and internationally standardized translation quality.",
+    "activities_title": "Lex Lingua Activities",
+    "activities_subtitle": "Team activities and achievements in academic and professional development",
+    "activities": [
+      {
+        "title": "Academic Publication Exchange in South Korea",
+        "desc": "Participation in international academic forums in South Korea became an important momentum in expanding scientific networks and introducing research results to the global academic community."
+      },
+      {
+        "title": "Capacity Building and Community Service",
+        "desc": "Involvement in capacity building activities with various stakeholders demonstrates commitment to bridging the academic world with practical needs in the field."
+      },
+      {
+        "title": "Academic Diplomacy and Cultural Exchange",
+        "desc": "Meetings with international academics open wider collaboration spaces through the exchange of ideas, experiences, and cross-cultural perspectives."
+      },
+      {
+        "title": "Building Global Networks in International Academic Environments",
+        "desc": "Academic visits to various educational institutions in Europe are part of efforts to broaden insights and strengthen international networks."
+      },
+      {
+        "title": "Academic Achievement and Dedication to Knowledge",
+        "desc": "Academic inauguration moments symbolize dedication, hard work, and sustained commitment to knowledge development."
+      },
+      {
+        "title": "International Collaborative Studies",
+        "desc": "Involvement in collaborative study programs with domestic and international universities reflects the spirit of collaboration in addressing global challenges."
+      },
+      {
+        "title": "Academic Visit to Utrecht University Faculty of Law",
+        "desc": "A visit to the Faculty of Law at Utrecht University, Netherlands, was part of efforts to deepen understanding of education systems and legal studies development at the international level."
+      },
+      {
+        "title": "Exploring Education Ecosystems and International Mobility",
+        "desc": "Academic journeys across various European cities provide firsthand experience of education systems, cultures, and inter-country connectivity."
+      }
+    ],
+    "contact_title": "Contact Information",
+    "contact_subtitle": "We are ready to help with your translation needs",
+    "address_label": "Address",
+    "address": "Jl. Pedang No. 543-62, RT 006 RW 002, Kel. 20 Ilir D-II, Kec. Kemuning, Palembang City, South Sumatra.",
+    "whatsapp_label": "WhatsApp",
+    "email_label": "Email",
+    "hours_label": "Operating Hours",
+    "hours": "Monday–Friday | 08:00–17:00 WIB",
+    "hours_note": "Consultation services are available online and offline by appointment."
   },
-  "footer": { "tagline": "Professional translation services for your legal, academic, and business needs.", "quick_links": "Quick Links", "services": "Services", "contact": "Contact", "copyright": "© 2026 Lex Lingua Academica Translators. All Rights Reserved." },
+  "footer": {
+    "tagline": "Academic and professional translation services emphasizing terminology equivalence, meaning accuracy, and cultural sensitivity.",
+    "quick_links": "Quick Links",
+    "services": "Services",
+    "contact": "Contact",
+    "hours_label": "Operating Hours",
+    "hours": "Monday–Friday | 08:00–17:00 WIB",
+    "copyright": "© 2026 Lex Lingua Academica Translators. All Rights Reserved."
+  },
   "whatsapp": { "default_message": "Hello Lex Lingua, I would like to consult about translation services." }
 }

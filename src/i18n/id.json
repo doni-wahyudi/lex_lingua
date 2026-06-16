@@ -1,56 +1,204 @@
 {
-  "nav": { "home": "Beranda", "specialization": "Spesialisasi", "services": "Layanan & Harga", "blog": "Artikel", "about": "Tentang Kami", "contact_cta": "Hubungi Kami" },
-  "hero": { "tagline": "Tepat dalam Makna", "subtitle": "Layanan penerjemahan profesional untuk kebutuhan legal, akademik, dan bisnis.", "cta_consult": "Konsultasi Gratis", "cta_services": "Lihat Layanan" },
+  "nav": { "home": "Beranda", "specialization": "Spesialisasi", "services": "Layanan & Harga", "blog": "Artikel", "about": "Tim Lex Lingua", "contact_cta": "Hubungi Kami" },
+  "hero": {
+    "tagline": "Penerjemahan Akademik Presisi untuk Komunikasi Global",
+    "subtitle": "Lex Lingua Academica menyediakan layanan penerjemahan akademik dan profesional dengan mengutamakan kesetaraan istilah, akurasi makna, nuansa bahasa, serta sensitivitas budaya untuk mendukung kebutuhan pendidikan, penelitian, dan publikasi internasional.",
+    "cta_consult": "Konsultasi Sekarang",
+    "cta_services": "Lihat Layanan"
+  },
+  "description": {
+    "title": "Tentang Kami",
+    "text": "Berdasarkan Klasifikasi Baku Lapangan Usaha Indonesia (KBLI) 74901, Lex Lingua Academica bergerak di bidang jasa penerjemahan dari bahasa asal (source language) ke bahasa tujuan (target language), dengan memperhatikan kesetaraan istilah, rasa bahasa, konteks akademik, dan aspek budaya. Kami berkomitmen menghadirkan hasil terjemahan yang akurat, natural, dan sesuai dengan standar internasional untuk mendukung kebutuhan individu, institusi pendidikan, peneliti, organisasi, dan profesional."
+  },
   "advantages": {
-    "title": "Mengapa Memilih Kami?", "subtitle": "Kami menghadirkan standar tertinggi dalam setiap proyek penerjemahan",
-    "certified": { "title": "Penerjemah Bersertifikat", "desc": "Tim penerjemah profesional dengan sertifikasi resmi dan pengalaman bertahun-tahun." },
-    "confidential": { "title": "Kerahasiaan Terjamin", "desc": "Dokumen Anda dilindungi dengan standar keamanan ketat dan NDA profesional." },
-    "ontime": { "title": "Tepat Waktu", "desc": "Komitmen penyelesaian sesuai deadline yang disepakati tanpa kompromi kualitas." },
-    "transparent": { "title": "Harga Transparan", "desc": "Struktur biaya yang jelas tanpa biaya tersembunyi. Estimasi harga sebelum pengerjaan." }
+    "title": "Keunggulan Kami",
+    "subtitle": "Komitmen kami dalam setiap proyek penerjemahan",
+    "terminology": { "title": "Terminologi Akademik & Profesional", "desc": "Penerjemahan berbasis terminologi akademik dan profesional yang presisi dan sesuai standar." },
+    "cultural": { "title": "Konteks Budaya & Nuansa Bahasa", "desc": "Memperhatikan konteks budaya dan nuansa bahasa untuk hasil terjemahan yang natural." },
+    "confidential": { "title": "Kerahasiaan Dokumen", "desc": "Menjamin kerahasiaan dokumen klien dengan standar keamanan profesional." },
+    "process": { "title": "Cepat, Akurat & Transparan", "desc": "Proses kerja yang cepat, akurat, dan transparan tanpa biaya tersembunyi." },
+    "team": { "title": "Tim Berpengalaman", "desc": "Didukung oleh tim penerjemah dan editor berpengalaman di berbagai bidang keilmuan." }
   },
   "specialization_preview": {
-    "title": "Spesialisasi Kami", "subtitle": "Keahlian mendalam di berbagai bidang penerjemahan profesional",
-    "legal": { "title": "Legal Translator", "desc": "Penerjemahan dokumen hukum dengan akurasi terminologi yang presisi." },
-    "academic": { "title": "Academic Translator", "desc": "Penerjemahan karya ilmiah dan jurnal untuk publikasi internasional." },
-    "business": { "title": "Business Translator", "desc": "Penerjemahan dokumen bisnis dan korporasi bertaraf profesional." },
-    "medical": { "title": "Medical Translator", "desc": "Penerjemahan dokumen medis dengan ketepatan istilah klinis." },
+    "title": "Spesialisasi Kami",
+    "subtitle": "Keahlian mendalam di berbagai bidang penerjemahan profesional",
+    "academic": { "title": "Penerjemahan Akademik", "desc": "Artikel ilmiah, manuskrip jurnal, tesis, disertasi, dan proposal penelitian." },
+    "legal": { "title": "Penerjemahan Hukum", "desc": "Kontrak, perjanjian, dokumen litigasi, legal opinion, dan peraturan." },
+    "education": { "title": "Penerjemahan Pendidikan & Penelitian", "desc": "Modul pembelajaran, instrumen penelitian, laporan penelitian, dan materi pelatihan." },
+    "business": { "title": "Penerjemahan Bisnis & Organisasi", "desc": "Profil perusahaan, laporan tahunan, presentasi bisnis, dan dokumen kelembagaan." },
     "view_all": "Lihat Semua Spesialisasi"
   },
-  "stats": { "documents": "Dokumen Diterjemahkan", "clients": "Klien Korporasi", "specializations": "Bidang Spesialisasi", "experience": "Tahun Pengalaman" },
-  "testimonials": { "title": "Apa Kata Klien Kami", "subtitle": "Kepercayaan dan kepuasan klien adalah prioritas utama kami" },
   "cta_banner": { "title": "Butuh Penerjemahan Profesional?", "subtitle": "Konsultasikan kebutuhan penerjemahan dokumen Anda dengan tim ahli kami. Gratis!", "button": "Konsultasi via WhatsApp" },
   "specialization_page": {
-    "title": "Spesialisasi Translation", "subtitle": "Keahlian mendalam dan pengalaman profesional di setiap bidang penerjemahan",
-    "legal": { "title": "Legal Translator", "desc": "Penerjemahan dokumen hukum yang presisi dan bersertifikat untuk kebutuhan peradilan, kontrak bisnis, dan dokumen notaris.", "details": "Tim legal translator kami memiliki pemahaman mendalam tentang terminologi hukum lintas bahasa. Setiap terjemahan melewati proses review ganda untuk memastikan akurasi.", "documents": ["Kontrak & Perjanjian", "Dokumen Pengadilan", "Akta Notaris", "Legal Opinion", "Surat Kuasa", "Peraturan & Undang-undang"] },
-    "academic": { "title": "Academic Translator", "desc": "Penerjemahan karya ilmiah berkualitas publikasi untuk jurnal internasional, tesis, dan makalah penelitian.", "details": "Kami memahami standar penulisan akademik internasional dan konvensi sitasi yang berlaku.", "documents": ["Jurnal Ilmiah", "Tesis & Disertasi", "Makalah Penelitian", "Abstrak Akademik", "Proposal Hibah", "Laporan Penelitian"] },
-    "business": { "title": "Business Translator", "desc": "Penerjemahan dokumen korporasi bertaraf profesional untuk ekspansi bisnis dan kerjasama internasional.", "details": "Dokumen bisnis memerlukan ketepatan dalam menyampaikan nuansa dan nada profesional.", "documents": ["MoU & Perjanjian Kerja Sama", "Business Plan", "Laporan Tahunan", "Company Profile", "Proposal Bisnis", "Korespondensi Resmi"] },
-    "medical": { "title": "Medical Translator", "desc": "Penerjemahan dokumen medis dengan ketepatan istilah klinis dan farmakologi.", "details": "Kesalahan dalam penerjemahan medis dapat berdampak serius. Tim kami bekerja dengan standar presisi tertinggi.", "documents": ["Rekam Medis", "Dokumen Farmasi", "Penelitian Klinis", "Informasi Pasien", "Sertifikat Kesehatan", "Protokol Penelitian"] },
+    "title": "Spesialisasi Kami",
+    "subtitle": "Keahlian mendalam dan pengalaman profesional di setiap bidang penerjemahan",
+    "academic": {
+      "title": "Penerjemahan Akademik",
+      "desc": "Penerjemahan karya ilmiah berkualitas publikasi untuk jurnal internasional, tesis, dan makalah penelitian.",
+      "details": "Kami memahami standar penulisan akademik internasional dan konvensi sitasi yang berlaku di berbagai disiplin ilmu.",
+      "documents": ["Artikel Ilmiah", "Manuskrip Jurnal", "Tesis dan Disertasi", "Prosiding Konferensi", "Proposal Penelitian"]
+    },
+    "legal": {
+      "title": "Penerjemahan Hukum",
+      "desc": "Penerjemahan dokumen hukum yang presisi dengan memperhatikan ketepatan istilah hukum dan konteks regulasi.",
+      "details": "Tim legal translator kami memiliki pemahaman mendalam tentang terminologi hukum lintas bahasa dan sistem hukum.",
+      "documents": ["Kontrak dan Perjanjian", "Dokumen Litigasi", "Legal Opinion", "Peraturan dan Kebijakan"]
+    },
+    "education": {
+      "title": "Penerjemahan Pendidikan dan Penelitian",
+      "desc": "Penerjemahan dokumen pendidikan dan penelitian untuk mendukung kegiatan akademik dan pengembangan ilmu pengetahuan.",
+      "details": "Kami memastikan setiap dokumen pendidikan dan penelitian diterjemahkan dengan memperhatikan konteks pedagogis dan metodologis.",
+      "documents": ["Modul Pembelajaran", "Instrumen Penelitian", "Laporan Penelitian", "Materi Pelatihan"]
+    },
+    "business": {
+      "title": "Penerjemahan Bisnis dan Organisasi",
+      "desc": "Penerjemahan dokumen korporasi bertaraf profesional untuk ekspansi bisnis dan kerjasama internasional.",
+      "details": "Dokumen bisnis memerlukan ketepatan dalam menyampaikan nuansa dan nada profesional yang sesuai.",
+      "documents": ["Profil Perusahaan", "Laporan Tahunan", "Presentasi Bisnis", "Dokumen Kelembagaan"]
+    },
+    "languages": {
+      "title": "Bahasa yang Dilayani",
+      "subtitle": "Pengembangan layanan untuk bahasa lainnya tersedia berdasarkan permintaan.",
+      "pairs": [
+        "Bahasa Indonesia – Bahasa Inggris",
+        "Bahasa Inggris – Bahasa Indonesia",
+        "Bahasa Indonesia – Bahasa Belanda",
+        "Bahasa Belanda – Bahasa Indonesia",
+        "Bahasa Indonesia – Bahasa Korea",
+        "Bahasa Korea – Bahasa Indonesia"
+      ]
+    },
     "cta": "Konsultasi Sekarang"
   },
   "services_page": {
-    "title": "Layanan & Harga", "subtitle": "Solusi penerjemahan profesional dengan harga transparan dan kualitas terjamin",
-    "tiers": {
-      "standard": { "name": "Standard", "price": "Rp 75.000", "per": "/ halaman", "turnaround": "3-5 hari kerja", "features": ["Terjemahan profesional", "Review 1 kali", "Format dokumen standar", "Revisi minor gratis", "Dukungan email"] },
-      "express": { "name": "Express", "price": "Rp 125.000", "per": "/ halaman", "turnaround": "1-2 hari kerja", "badge": "Populer", "features": ["Terjemahan profesional", "Review 2 kali", "Prioritas pengerjaan", "Format dokumen asli", "Revisi gratis", "Dukungan WhatsApp"] },
-      "premium": { "name": "Premium", "price": "Rp 200.000", "per": "/ halaman", "turnaround": "Same-day", "features": ["Terjemahan bersertifikat", "Review 3 kali + proofreading", "Pengerjaan tercepat", "Bantuan legalisasi", "Format sesuai permintaan", "Dukungan prioritas 24/7"] }
+    "title": "Layanan & Harga",
+    "subtitle": "Solusi penerjemahan profesional dengan harga transparan dan kualitas terjamin",
+    "services": {
+      "academic_standard": {
+        "name": "Penerjemahan Akademik Standar",
+        "price": "Rp150.000",
+        "per": "/ halaman (250–300 kata)",
+        "desc": "Cocok untuk artikel ilmiah, tugas akhir, proposal penelitian, dan dokumen akademik."
+      },
+      "academic_premium": {
+        "name": "Penerjemahan Akademik Premium",
+        "price": "Rp250.000",
+        "per": "/ halaman (250–300 kata)",
+        "desc": "Termasuk penyuntingan terminologi akademik dan pemeriksaan kualitas akhir."
+      },
+      "legal": {
+        "name": "Penerjemahan Dokumen Hukum",
+        "price": "Rp300.000",
+        "per": "/ halaman (250–300 kata)",
+        "desc": "Dikerjakan dengan memperhatikan ketepatan istilah hukum dan konteks regulasi."
+      },
+      "proofreading": {
+        "name": "Penyuntingan dan Proofreading Akademik",
+        "price": "Rp75.000",
+        "per": "/ halaman",
+        "desc": "Meliputi pemeriksaan tata bahasa, konsistensi istilah, dan penyempurnaan gaya bahasa akademik."
+      },
+      "express": {
+        "name": "Layanan Ekspres",
+        "price": "+30%",
+        "per": "dari total biaya layanan",
+        "desc": "Tambahan biaya untuk pengerjaan dengan tenggat waktu lebih cepat."
+      }
     },
-    "form_title": "Konsultasi Gratis", "form_subtitle": "Ceritakan kebutuhan penerjemahan Anda",
-    "form": { "name": "Nama Lengkap", "email": "Email", "whatsapp": "Nomor WhatsApp", "doc_type": "Jenis Dokumen", "doc_types": ["Dokumen Hukum", "Karya Ilmiah / Jurnal", "Dokumen Bisnis", "Dokumen Medis", "Dokumen Pribadi", "Lainnya"], "notes": "Keterangan Tambahan", "notes_placeholder": "Jelaskan kebutuhan penerjemahan Anda...", "submit": "Kirim via WhatsApp", "select_placeholder": "Pilih jenis dokumen" }
+    "notes_title": "Catatan",
+    "notes": [
+      "Harga dapat disesuaikan berdasarkan tingkat kompleksitas dokumen, bidang keilmuan, jumlah kata, dan tenggat waktu.",
+      "Seluruh dokumen klien dijamin kerahasiaannya.",
+      "Penawaran harga final akan diberikan setelah dokumen ditinjau oleh tim."
+    ],
+    "form_title": "Konsultasi Gratis",
+    "form_subtitle": "Ceritakan kebutuhan penerjemahan Anda",
+    "form": {
+      "name": "Nama Lengkap",
+      "email": "Email",
+      "whatsapp": "Nomor WhatsApp",
+      "doc_type": "Jenis Dokumen",
+      "doc_types": ["Dokumen Akademik", "Dokumen Hukum", "Dokumen Pendidikan & Penelitian", "Dokumen Bisnis & Organisasi", "Penyuntingan / Proofreading", "Lainnya"],
+      "notes": "Keterangan Tambahan",
+      "notes_placeholder": "Jelaskan kebutuhan penerjemahan Anda...",
+      "submit": "Kirim via WhatsApp",
+      "select_placeholder": "Pilih jenis dokumen"
+    }
   },
-  "blog_page": { "title": "Artikel & Insight", "subtitle": "Tips, panduan, dan informasi terkini seputar dunia penerjemahan profesional", "all": "Semua", "read_more": "Baca Selengkapnya", "read_time": "menit baca", "search_placeholder": "Cari artikel...", "no_results": "Tidak ada artikel yang ditemukan.", "related": "Artikel Terkait", "share": "Bagikan", "back": "Kembali ke Artikel", "need_help": "Butuh bantuan penerjemahan?", "need_help_desc": "Tim ahli kami siap membantu kebutuhan penerjemahan dokumen Anda.", "consult_now": "Konsultasi Sekarang" },
+  "blog_page": {
+    "title": "Artikel & Insight",
+    "subtitle": "Artikel, wawasan, dan informasi terkini seputar penerjemahan, akademik, dan publikasi ilmiah",
+    "all": "Semua",
+    "read_more": "Baca Selengkapnya",
+    "read_time": "menit baca",
+    "search_placeholder": "Cari artikel...",
+    "no_results": "Tidak ada artikel yang ditemukan.",
+    "related": "Artikel Terkait",
+    "share": "Bagikan",
+    "back": "Kembali ke Artikel",
+    "need_help": "Butuh bantuan penerjemahan?",
+    "need_help_desc": "Tim ahli kami siap membantu kebutuhan penerjemahan dokumen Anda.",
+    "consult_now": "Konsultasi Sekarang"
+  },
   "about_page": {
-    "title": "Tentang Kami", "subtitle": "Mengenal lebih dekat tim profesional di balik Lex Lingua Academica",
-    "profile_title": "Profil Perusahaan",
-    "profile_desc": "Persekutuan Perdata LEX LINGUA ACADEMICA TRANSLATORS adalah penyedia jasa penerjemahan profesional yang berdiri di Palembang, Sumatera Selatan. Kami berspesialisasi dalam penerjemahan dokumen dari bahasa asal (source language) ke dalam bahasa tujuan (target language), dengan memperhatikan parameter kesetaraan istilah, rasa bahasa, dan budaya.",
-    "mission_title": "Misi Kami", "mission_desc": "Menyediakan layanan penerjemahan berkualitas tinggi yang menjembatani komunikasi lintas bahasa dengan ketepatan makna dan profesionalisme.",
-    "vision_title": "Visi Kami", "vision_desc": "Menjadi mitra penerjemahan terpercaya di Indonesia yang diakui secara nasional dan internasional.",
-    "legality_title": "Legalitas", "legality_desc": "Terdaftar sebagai Persekutuan Perdata sesuai regulasi yang berlaku. Klasifikasi KLBI 74901 — Jasa Penerjemahan.",
-    "team_title": "Tim Kami", "team_subtitle": "Para profesional berpengalaman di balik setiap proyek terjemahan",
-    "gallery_title": "Galeri Kami", "gallery_subtitle": "Momen dan aktivitas Lex Lingua Academica dalam melayani klien",
-    "contact_title": "Hubungi Kami", "contact_subtitle": "Kami siap membantu kebutuhan penerjemahan Anda",
-    "address_label": "Alamat", "address": "Jl. Pedang No. 543-62, RT 006 RW 002, Kel. 20 Ilir D-II, Kec. Kemuning, Kota Palembang, Prov. Sumatera Selatan",
-    "whatsapp_label": "WhatsApp", "email_label": "Email"
+    "title": "Tim Lex Lingua",
+    "subtitle": "Lex Lingua Academica didukung oleh tim penerjemah, editor, dan konsultan bahasa yang memiliki pengalaman di bidang akademik, hukum, dan penelitian.",
+    "team_title": "Anggota Tim",
+    "team_subtitle": "Setiap anggota tim memiliki kompetensi dalam memastikan kualitas terjemahan yang akurat, konsisten, dan sesuai dengan standar internasional.",
+    "activities_title": "Kegiatan Lex Lingua",
+    "activities_subtitle": "Aktivitas dan pencapaian tim dalam pengembangan akademik dan profesional",
+    "activities": [
+      {
+        "title": "Pertukaran Publikasi Akademik di Korea Selatan",
+        "desc": "Partisipasi dalam forum akademik internasional di Korea Selatan menjadi momentum penting dalam memperluas jejaring ilmiah dan memperkenalkan hasil penelitian kepada komunitas akademik global."
+      },
+      {
+        "title": "Penguatan Kapasitas dan Pengabdian kepada Masyarakat",
+        "desc": "Keterlibatan dalam kegiatan penguatan kapasitas bersama berbagai pemangku kepentingan menunjukkan komitmen untuk menjembatani dunia akademik dengan kebutuhan praktis di lapangan."
+      },
+      {
+        "title": "Diplomasi Akademik dan Pertukaran Budaya",
+        "desc": "Pertemuan dengan akademisi internasional membuka ruang kolaborasi yang lebih luas melalui pertukaran gagasan, pengalaman, dan perspektif lintas budaya."
+      },
+      {
+        "title": "Membangun Jejaring Global di Lingkungan Akademik Internasional",
+        "desc": "Kunjungan akademik ke berbagai institusi pendidikan di Eropa menjadi bagian dari upaya memperluas wawasan dan memperkuat jejaring internasional."
+      },
+      {
+        "title": "Pencapaian Akademik dan Dedikasi terhadap Ilmu Pengetahuan",
+        "desc": "Momen pengukuhan akademik menjadi simbol dari dedikasi, kerja keras, dan komitmen yang berkelanjutan dalam pengembangan ilmu pengetahuan."
+      },
+      {
+        "title": "Studi Kolaboratif Internasional",
+        "desc": "Keterlibatan dalam program collaborative study bersama perguruan tinggi dalam dan luar negeri mencerminkan semangat kolaborasi dalam menjawab tantangan global."
+      },
+      {
+        "title": "Kunjungan Akademik ke Fakultas Hukum Universitas Utrecht",
+        "desc": "Kunjungan ke Fakultas Hukum Universitas Utrecht, Belanda, menjadi bagian dari upaya memperdalam pemahaman mengenai sistem pendidikan dan perkembangan studi hukum di tingkat internasional."
+      },
+      {
+        "title": "Eksplorasi Ekosistem Pendidikan dan Mobilitas Internasional",
+        "desc": "Perjalanan akademik di berbagai kota di Eropa menghadirkan pengalaman langsung mengenai sistem pendidikan, budaya, dan konektivitas antarnegara."
+      }
+    ],
+    "contact_title": "Informasi Kontak",
+    "contact_subtitle": "Kami siap membantu kebutuhan penerjemahan Anda",
+    "address_label": "Alamat",
+    "address": "Jl. Pedang Nomor 543-62, RT 006 RW 002, Kelurahan 20 Ilir D-II, Kecamatan Kemuning, Kota Palembang, Sumatera Selatan.",
+    "whatsapp_label": "WhatsApp",
+    "email_label": "Email",
+    "hours_label": "Jam Operasional",
+    "hours": "Senin–Jumat | 08.00–17.00 WIB",
+    "hours_note": "Layanan konsultasi tersedia secara daring dan luring berdasarkan perjanjian."
   },
-  "footer": { "tagline": "Layanan penerjemahan profesional untuk kebutuhan legal, akademik, dan bisnis.", "quick_links": "Tautan Cepat", "services": "Layanan", "contact": "Kontak", "copyright": "© 2026 Lex Lingua Academica Translators. Hak Cipta Dilindungi." },
+  "footer": {
+    "tagline": "Layanan penerjemahan akademik dan profesional dengan mengutamakan kesetaraan istilah, akurasi makna, dan sensitivitas budaya.",
+    "quick_links": "Tautan Cepat",
+    "services": "Layanan",
+    "contact": "Kontak",
+    "hours_label": "Jam Operasional",
+    "hours": "Senin–Jumat | 08.00–17.00 WIB",
+    "copyright": "© 2026 Lex Lingua Academica Translators. Hak Cipta Dilindungi."
+  },
   "whatsapp": { "default_message": "Halo Lex Lingua, saya ingin konsultasi tentang layanan penerjemahan." }
 }

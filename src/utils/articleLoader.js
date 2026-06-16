@@ -68,21 +68,27 @@ function parseFrontmatter(content) {
 const articleFiles = import.meta.glob('/src/data/articles/*.md', { query: '?raw', import: 'default', eager: true });
 
 export function getAllArticles() {
-  const articles = Object.entries(articleFiles).map(([path, content]) => {
-    const { data, content: body } = parseFrontmatter(content);
-    
-    // Fix image paths for subpath deployment
-    if (data.coverImage && data.coverImage.startsWith('/')) {
-      data.coverImage = import.meta.env.BASE_URL + data.coverImage.slice(1);
-    }
+  const allowedSlugs = [
+    'mengapa-penerjemahan-akademik-keahlian-khusus',
+    'lima-kesalahan-menerjemahkan-istilah-hukum'
+  ];
+  const articles = Object.entries(articleFiles)
+    .map(([path, content]) => {
+      const { data, content: body } = parseFrontmatter(content);
+      
+      // Fix image paths for subpath deployment
+      if (data.coverImage && data.coverImage.startsWith('/')) {
+        data.coverImage = import.meta.env.BASE_URL + data.coverImage.slice(1);
+      }
 
-    const filename = path.split('/').pop().replace('.md', '');
-    return {
-      slug: data.slug || filename,
-      frontmatter: data,
-      content: body
-    };
-  });
+      const filename = path.split('/').pop().replace('.md', '');
+      return {
+        slug: data.slug || filename,
+        frontmatter: data,
+        content: body
+      };
+    })
+    .filter(a => allowedSlugs.includes(a.slug));
 
   return articles.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
 }
