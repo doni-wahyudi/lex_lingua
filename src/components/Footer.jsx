@@ -11,8 +11,11 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="footer-logo">
-              <span className="logo-lex">LEX</span>
-              <span className="logo-lingua">LINGUA</span>
+              <img 
+                src={`${import.meta.env.BASE_URL}images/logo-full.png`} 
+                alt="Lex Lingua Academica" 
+                className="footer-logo-img" 
+              />
             </div>
             <p className="footer-tagline">{t('footer.tagline')}</p>
           </div>

@@ -12,9 +12,21 @@
 .navbar-container {
   display: flex; align-items: center; justify-content: space-between;
 }
-.navbar-logo { display: flex; align-items: center; gap: 6px; font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; }
-.logo-lex { color: var(--accent-gold); }
-.logo-lingua { color: var(--text-light); font-weight: 400; }
+.navbar-logo { display: flex; align-items: center; height: 100%; }
+.navbar-logo-img {
+  height: 110px !important;
+  width: auto !important;
+  margin-top: -20px !important;
+  margin-bottom: -20px !important;
+  margin-left: -20px !important;
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease;
+}
+.navbar-logo-img:hover {
+  transform: scale(1.02);
+}
 .navbar-links { display: flex; align-items: center; gap: 32px; }
 .nav-link { color: var(--text-light-secondary); font-size: 0.9rem; font-weight: 500; transition: color 0.2s ease; position: relative; }
 .nav-link::after {

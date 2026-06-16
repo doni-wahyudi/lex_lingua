@@ -33,8 +33,11 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`} id="main-navbar">
       <div className="navbar-container container">
         <Link to="/" className="navbar-logo">
-          <span className="logo-lex">LEX</span>
-          <span className="logo-lingua">LINGUA</span>
+          <img 
+            src={`${import.meta.env.BASE_URL}images/logo-full.png`} 
+            alt="Lex Lingua Academica" 
+            className="navbar-logo-img" 
+          />
         </Link>
 
         <div className={`navbar-links ${mobileOpen ? 'active' : ''}`}>

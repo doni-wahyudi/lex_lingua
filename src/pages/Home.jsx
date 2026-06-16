@@ -1,8 +1,131 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 import { useModal } from '../context/ModalContext';
 import { FaWhatsapp, FaLock, FaClock, FaGavel, FaGraduationCap, FaBriefcase, FaGlobe, FaUsers, FaBook } from 'react-icons/fa';
 import './Home.css';
+
+const TRANSLATION_DATA = [
+  {
+    type: 'Academic',
+    idFile: 'manuskrip_jurnal.docx',
+    enFile: 'journal_manuscript.docx',
+    idText: 'Tinjauan pustaka ini menguraikan metodologi penelitian...',
+    enText: 'This literature review delineates the research methodology...'
+  },
+  {
+    type: 'Legal',
+    idFile: 'perjanjian_lisensi.docx',
+    enFile: 'license_agreement.docx',
+    idText: 'Perjanjian ini tunduk pada hukum Republik Indonesia...',
+    enText: 'This Agreement shall be governed by the laws of the Republic of Indonesia...'
+  },
+  {
+    type: 'Business',
+    idFile: 'laporan_tahunan.docx',
+    enFile: 'annual_report.docx',
+    idText: 'Laporan ini memproyeksikan pertumbuhan pangsa pasar...',
+    enText: 'This report projects the growth of market share...'
+  }
+];
+
+function TranslationConsole() {
+  const [index, setIndex] = useState(0);
+  const [typedId, setTypedId] = useState('');
+  const [showEn, setShowEn] = useState(false);
+  const [translating, setTranslating] = useState(false);
+
+  const current = TRANSLATION_DATA[index];
+
+  useEffect(() => {
+    let timer;
+    let charIndex = 0;
+    setTypedId('');
+    setShowEn(false);
+    setTranslating(false);
+
+    const typeId = () => {
+      if (charIndex < current.idText.length) {
+        setTypedId(current.idText.substring(0, charIndex + 1));
+        charIndex++;
+        timer = setTimeout(typeId, 40);
+      } else {
+        setTranslating(true);
+        timer = setTimeout(() => {
+          setTranslating(false);
+          setShowEn(true);
+          timer = setTimeout(() => {
+            setIndex((prev) => (prev + 1) % TRANSLATION_DATA.length);
+          }, 4500);
+        }, 1000);
+      }
+    };
+
+    timer = setTimeout(typeId, 500);
+
+    return () => clearTimeout(timer);
+  }, [index]);
+
+  return (
+    <div className="console-window">
+      <div className="console-header">
+        <div className="console-dots">
+          <span className="dot dot-red"></span>
+          <span className="dot dot-yellow"></span>
+          <span className="dot dot-green"></span>
+        </div>
+        <div className="console-title">{current.type} Mode</div>
+        <div className="console-badge-type">{current.type}</div>
+      </div>
+
+      <div className="console-body">
+        <div className="console-panel panel-left">
+          <div className="panel-tab">
+            <span className="tab-icon">🇮🇩</span>
+            <span className="tab-name">{current.idFile}</span>
+          </div>
+          <div className="panel-text-area">
+            <div className="line-numbers">
+              <span>1</span>
+              <span>2</span>
+            </div>
+            <p className="panel-text">
+              {typedId}
+              <span className="console-cursor">|</span>
+            </p>
+          </div>
+        </div>
+
+        <div className="console-divider">
+          {translating ? (
+            <div className="translation-spinner">
+              <div className="spinner-ring"></div>
+              <span className="spinner-text">EN</span>
+            </div>
+          ) : (
+            <div className="translation-arrow">&rarr;</div>
+          )}
+        </div>
+
+        <div className="console-panel panel-right">
+          <div className="panel-tab">
+            <span className="tab-icon">🇬🇧</span>
+            <span className="tab-name">{current.enFile}</span>
+          </div>
+          <div className="panel-text-area">
+            <div className="line-numbers">
+              <span>1</span>
+              <span>2</span>
+            </div>
+            <p className={`panel-text text-translated ${showEn ? 'fade-in' : 'hidden'}`}>
+              {current.enText}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   const { t } = useLanguage();
@@ -29,21 +152,35 @@ export default function Home() {
       <section className="hero section-dark" id="hero">
         <div className="hero-bg" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/hero-bg.png)` }} />
         <div className="hero-overlay" />
-        <div className="container hero-content">
-          <p className="hero-brand fade-in-up">LEX LINGUA ACADEMICA</p>
-          <h1 className="hero-tagline fade-in-up fade-in-up-delay-1">
-            <span className="shimmer-text">{t('hero.tagline')}</span>
-          </h1>
-          <p className="hero-subtitle fade-in-up fade-in-up-delay-2">{t('hero.subtitle')}</p>
-          <div className="hero-actions fade-in-up fade-in-up-delay-3">
-            <button onClick={() => openContactModal()} className="btn btn-primary">
-              <FaWhatsapp /> {t('hero.cta_consult')}
-            </button>
-            <Link to="/services" className="btn btn-outline">{t('hero.cta_services')}</Link>
+        <div className="container hero-container-layout">
+          <div className="hero-info fade-in-up">
+            <p className="hero-tagline-small">
+              <FaGlobe className="orange-icon" /> JASA PENERJEMAHAN AKADEMIK &amp; LEGAL
+            </p>
+            <h1 className="hero-main-title">
+              Konsultasikan Kebutuhan Penerjemahan Anda <span className="highlight-italic">Sekarang</span>!
+            </h1>
+            <p className="hero-description">
+              Lex Lingua Academica hadir untuk menerjemahkan dokumen penting Anda dengan presisi tinggi, memperhatikan kesetaraan istilah, rasa bahasa, dan standar internasional.
+            </p>
+            <div className="hero-badge-box">
+              <div className="hero-badge">
+                <FaClock className="badge-icon" /> Estimasi respons profesional dalam 5 menit.
+              </div>
+            </div>
+            <div className="hero-action-buttons">
+              <button onClick={() => openContactModal()} className="btn btn-primary btn-consult">
+                MULAI KONSULTASI &rarr;
+              </button>
+              <Link to="/services" className="btn btn-outline btn-pricing-scheme">
+                LIHAT SKEMA BIAYA
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className="hero-scroll-indicator">
-          <div className="scroll-line" />
+
+          <div className="hero-interactive-showcase fade-in-up fade-in-up-delay-1">
+            <TranslationConsole />
+          </div>
         </div>
       </section>
 
