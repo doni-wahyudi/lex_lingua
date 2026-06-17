@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 import { useModal } from '../context/ModalContext';
-import { FaWhatsapp, FaLock, FaClock, FaGavel, FaGraduationCap, FaBriefcase, FaGlobe, FaUsers, FaBook } from 'react-icons/fa';
+import { FaWhatsapp, FaLock, FaClock, FaGavel, FaGraduationCap, FaBriefcase, FaGlobe, FaUsers, FaBook, FaCommentDots } from 'react-icons/fa';
 import './Home.css';
 
 const TRANSLATION_DATA = [
@@ -130,6 +130,20 @@ function TranslationConsole() {
 export default function Home() {
   const { t } = useLanguage();
   const { openContactModal } = useModal();
+  const [currentBg, setCurrentBg] = useState(0);
+
+  const heroBgs = [
+    `${import.meta.env.BASE_URL}images/hero_1.png`,
+    `${import.meta.env.BASE_URL}images/hero_2.png`,
+    `${import.meta.env.BASE_URL}images/hero_3.png`,
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBg((prev) => (prev + 1) % heroBgs.length);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
 
   const advantages = [
     { icon: <FaGraduationCap />, key: 'terminology' },
@@ -150,7 +164,26 @@ export default function Home() {
     <main id="home-page">
       {/* Hero */}
       <section className="hero section-dark" id="hero">
-        <div className="hero-bg" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/hero-bg.png)` }} />
+        <div className="hero-slider">
+          <div 
+            className="hero-slider-inner" 
+            style={{ 
+              transform: `translateX(-${currentBg * (100 / heroBgs.length)}%)`, 
+              width: `${heroBgs.length * 100}%` 
+            }}
+          >
+            {heroBgs.map((bg, idx) => (
+              <div
+                key={idx}
+                className="hero-slide"
+                style={{ 
+                  backgroundImage: `url(${bg})`,
+                  width: `${100 / heroBgs.length}%`
+                }}
+              />
+            ))}
+          </div>
+        </div>
         <div className="hero-overlay" />
         <div className="container hero-container-layout">
           <div className="hero-info fade-in-up">
@@ -165,15 +198,16 @@ export default function Home() {
             </p>
             <div className="hero-badge-box">
               <div className="hero-badge">
-                <FaClock className="badge-icon" /> Estimasi respons profesional dalam 5 menit.
+                <span className="badge-status-dot" />
+                <FaCommentDots className="badge-icon" /> {t('hero.badge_text')}
               </div>
             </div>
             <div className="hero-action-buttons">
               <button onClick={() => openContactModal()} className="btn btn-primary btn-consult">
-                MULAI KONSULTASI &rarr;
+                {t('hero.cta_consult')} <span className="btn-arrow">&rarr;</span>
               </button>
               <Link to="/services" className="btn btn-outline btn-pricing-scheme">
-                LIHAT SKEMA BIAYA
+                {t('hero.cta_services')}
               </Link>
             </div>
           </div>
