@@ -5,7 +5,7 @@
     "subtitle": "Lex Lingua Academica provides academic and professional translation services emphasizing terminology equivalence, meaning accuracy, language nuance, and cultural sensitivity to support education, research, and international publication needs.",
     "cta_consult": "Contact Translator Now",
     "cta_services": "View Price Estimate",
-    "badge_text": "In a hurry? Contact our translators (5-Min Response)"
+    "badge_text": "In a hurry? Contact our translators"
   },
   "description": {
     "title": "About Us",
@@ -182,6 +182,10 @@
         "desc": "Academic journeys across various European cities provide firsthand experience of education systems, cultures, and inter-country connectivity."
       }
     ],
+    "publications_title": "Our Team's Scientific Publications",
+    "publications_subtitle": "Academic works by our team members indexed in reputable national and international journals",
+    "gallery_title": "Activity Documentation",
+    "gallery_subtitle": "Photo documentation of Lex Lingua team's academic and professional activities",
     "contact_title": "Contact Information",
     "contact_subtitle": "We are ready to help with your translation needs",
     "address_label": "Address",

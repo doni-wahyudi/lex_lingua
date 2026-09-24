@@ -25,11 +25,11 @@ export const team = [
     name: "Helena Primadianti Sulistyaningrum, S.H., M.H.",
     role: { id: "Dosen Hukum Perdata", en: "Lecturer in Civil Law" },
     bio: { id: "Dosen Hukum Perdata dengan keahlian dalam penerjemahan dokumen hukum.", en: "Lecturer in Civil Law with expertise in legal document translation." },
-    image: "/images/team/member-4.png"
+    image: "/images/team/helena.jpg"
   },
   {
     id: 5,
-    name: "Nicho Thomas, S.H., M.H.",
+    name: "Nico Thomas, S.H., M.H.",
     role: { id: "Dosen dan Praktisi Hukum", en: "Lecturer and Legal Practitioner" },
     bio: { id: "Dosen dan praktisi hukum yang aktif dalam penerjemahan dan konsultasi hukum.", en: "Lecturer and legal practitioner active in legal translation and consultation." },
     image: "/images/team/member-5.png"

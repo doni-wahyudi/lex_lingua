@@ -5,7 +5,7 @@
     "subtitle": "Lex Lingua Academica menyediakan layanan penerjemahan akademik dan profesional dengan mengutamakan kesetaraan istilah, akurasi makna, nuansa bahasa, serta sensitivitas budaya untuk mendukung kebutuhan pendidikan, penelitian, dan publikasi internasional.",
     "cta_consult": "Hubungi Penerjemah Sekarang",
     "cta_services": "Lihat Estimasi Harga",
-    "badge_text": "Butuh Cepat? Hubungi Penerjemah Kami (Respon 5 Menit)"
+    "badge_text": "Butuh Cepat? Hubungi Penerjemah Kami"
   },
   "description": {
     "title": "Tentang Kami",
@@ -182,6 +182,10 @@
         "desc": "Perjalanan akademik di berbagai kota di Eropa menghadirkan pengalaman langsung mengenai sistem pendidikan, budaya, dan konektivitas antarnegara."
       }
     ],
+    "publications_title": "Publikasi Ilmiah Tim Kami",
+    "publications_subtitle": "Karya ilmiah anggota tim yang terindeks di jurnal nasional dan internasional bereputasi",
+    "gallery_title": "Dokumentasi Kegiatan",
+    "gallery_subtitle": "Foto-foto dokumentasi kegiatan akademik dan profesional tim Lex Lingua",
     "contact_title": "Informasi Kontak",
     "contact_subtitle": "Kami siap membantu kebutuhan penerjemahan Anda",
     "address_label": "Alamat",
